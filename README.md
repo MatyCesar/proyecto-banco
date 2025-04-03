@@ -96,7 +96,7 @@ Buenas tardes,
 
 Adjunto la solución solicitada para la prueba técnica.
 
-🔗 Repositorio Global: https://github.com/usuario/backend-banco
+🔗 Repositorio Global: https://github.com/MatyCesar/proyecto-banco
 📁 Archivos incluidos: BaseDatos.sql, colección Postman, README, Dockerfiles.
 
 Quedo atento a cualquier observación o entrevista técnica.
