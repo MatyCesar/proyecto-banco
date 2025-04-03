@@ -1,0 +1,149 @@
+{
+  "info": {
+    "name": "BancoAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "banco-api-20250403035551"
+  },
+  "item": [
+    {
+      "name": "Listar Clientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "clientes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Crear Cliente",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Juan P\\u00e9rez\",\n  \"genero\": \"Masculino\",\n  \"edad\": 30,\n  \"identificacion\": \"12345678\",\n  \"direccion\": \"Calle Falsa 123\",\n  \"telefono\": \"555-1234\",\n  \"contrase\\u00f1a\": \"pass123\",\n  \"estado\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "clientes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Crear Cuenta",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"numero\": \"987654\",\n  \"tipo\": \"Corriente\",\n  \"saldoInicial\": 1000,\n  \"estado\": true,\n  \"cliente\": {\n    \"id\": 1\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/cuentas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "cuentas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Crear Movimiento",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"tipo\": \"RETIRO\",\n  \"valor\": 100,\n  \"cuenta\": {\n    \"id\": 1\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/movimientos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "movimientos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Reporte JSON",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/reportes/estado-cuenta?clienteId=1&desde=2024-01-01&hasta=2025-12-31&formato=json",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "reportes",
+            "estado-cuenta"
+          ],
+          "query": [
+            {
+              "key": "clienteId",
+              "value": "1"
+            },
+            {
+              "key": "desde",
+              "value": "2024-01-01"
+            },
+            {
+              "key": "hasta",
+              "value": "2025-12-31"
+            },
+            {
+              "key": "formato",
+              "value": "json"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

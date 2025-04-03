@@ -1,0 +1,12 @@
+com\ejemplo\backendclientes\BackendClientesApplication.class
+com\ejemplo\backendclientes\controller\CuentaController.class
+com\ejemplo\backendclientes\repository\CuentaRepository.class
+com\ejemplo\backendclientes\repository\ClienteRepository.class
+com\ejemplo\backendclientes\controller\MovimientoController.class
+com\ejemplo\backendclientes\repository\MovimientoRepository.class
+com\ejemplo\backendclientes\config\WebConfig.class
+com\ejemplo\backendclientes\model\Cuenta.class
+com\ejemplo\backendclientes\model\Cliente.class
+com\ejemplo\backendclientes\model\Movimiento.class
+com\ejemplo\backendclientes\controller\ReporteController.class
+com\ejemplo\backendclientes\controller\ClienteController.class
